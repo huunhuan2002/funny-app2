@@ -1,0 +1,886 @@
+﻿/*=======================================================
+  WelcomeBonus100
+=======================================================*/
+
+html:lang(en-US) .WelcomeBonus100 {
+    /*background: url(https://cdn.hanwei1234.com/Content/images/slider/welcome-bonus-100/web-welcome-bonus-100-2024-en.webp) no-repeat top center;*/
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/welcome-bonus-100/web-welcome-bonus-promo-euro2024-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .WelcomeBonus100 {
+    /*background: url(https://cdn.hanwei1234.com/Content/images/slider/welcome-bonus-100/web-welcome-bonus-100-2024-vn.webp) no-repeat top center;*/
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/welcome-bonus-100/web-welcome-bonus-promo-euro2024-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .WelcomeBonus100 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/welcome-bonus-100/web-welcome-bonus-100-2024-v1-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .WelcomeBonus100 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/welcome-bonus-100/web-welcome-bonus-100-2024-v1-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+  Asian Games U23
+=======================================================*/
+
+html:lang(en-US) .asian-games-u23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/asian-games-u23/web-asian-games-soccer-2022-final-match-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .asian-games-u23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/asian-games-u23/web-asian-games-soccer-2022-final-match-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .asian-games-u23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/asian-games-u23/web-asian-games-soccer-2022-final-match-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+.asian-games-u23 .bs-btn {
+    bottom: 10%;
+}
+
+
+/***************************************************
+   VIP Banner
+***************************************************/
+html:lang(en-US) .vip2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/vip2023/web-vip-2024-btn-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .vip2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/vip2023/web-vip-2024-btn-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .vip2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/vip2023/web-vip-2024-btn-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .vip2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/vip2023/web-vip-2024-btn-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+
+/***************************************************
+   Rewards Banner
+***************************************************/
+
+html:lang(en-US) .reward2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/rewards2023/web-rewards-2024-btn-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-vN) .reward2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/rewards2023/web-rewards-2024-btn-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .reward2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/rewards2023/web-rewards-2024-btn-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .reward2024 {
+    background: #f6ce03 url(https://cdn.hanwei1234.com/Content/images/slider/rewards2023/web-rewards-2024-btn-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+
+ 
+/***************************************************
+   Rewards Banner  
+***************************************************/
+
+
+/*=======================================================
+    PGSLOT
+=======================================================*/
+.slots-game {
+    background-image: url(https://cdn.hanwei1234.com/Content/images/casino/slider/hot-slots/web-pgslot-jan2023-yw.jpg);
+}
+
+.blackBody .slots-game {
+    background-image: url(https://cdn.hanwei1234.com/Content/images/casino/slider/hot-slots/web-pgslot-jan2023-yw.jpg);
+}
+
+html:lang(zh-CN) .slots-game {
+    background-image: url(https://cdn.hanwei1234.com/Content/images/casino/slider/hot-slots/web-pgslot-jan2023-yw-cn.jpg);
+}
+
+html:lang(zh-CN) .blackBody .slots-game {
+    background-image: url(https://cdn.hanwei1234.com/Content/images/casino/slider/hot-slots/web-pgslot-jan2023-yw-cn.jpg);
+}
+
+.slots-game-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    .slots-game-list li {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+    }
+
+        .slots-game-list li img {
+            margin: 30px 0 0;
+            display: block;
+            cursor: pointer;
+            transition: transform 200ms linear;
+            /*height: 100px;*/
+            max-height: 100px;
+        }
+
+        .slots-game-list li:hover img {
+            transform: scale(1.1);
+        }
+
+.slots-game .container-copyline {
+    margin-top: 5%;
+}
+
+    .slots-game .container-copyline .tcenter {
+        margin-top: 22px;
+    }
+
+
+/****************************
+     MAINZ05
+*****************************/
+html:lang(en-US) .mainz05 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/sponsor/web-mainz05-yw-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .mainz05 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/sponsor/web-mainz05-yw-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .mainz05 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/sponsor/web-mainz05-yw-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .mainz05 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/sponsor/web-mainz05-yw-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/****************************
+     End of MAINZ05
+*****************************/
+
+/****************************
+    uefa-2024
+*****************************/
+html:lang(en-US) .uefa-2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/uefa-2024/web-uefa-champs-sf-2024-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .uefa-2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/uefa-2024/web-uefa-champs-sf-2024-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .uefa-2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/uefa-2024/web-uefa-champs-sf-2024-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .uefa-2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/uefa-2024/web-uefa-champs-sf-2024-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/****************************
+    end of uefa-2024
+*****************************/
+
+/****************************
+    epl-2024
+*****************************/
+html:lang(en-US) .epl-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/epl-2024/web-epl-2024-v3-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .epl-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/epl-2024/web-epl-2024-v3-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .epl-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/epl-2024/web-epl-2024-v3-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .epl-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/epl-2024/web-epl-2024-v3-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+.epl-2024 .container-copyline {
+    margin-top: 0;
+}
+
+/****************************
+    laliga2024
+*****************************/
+html:lang(en-US) .laliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/laliga-2024/web-laliga-2024-v4-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .laliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/laliga-2024/web-laliga-2024-v4-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .laliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/laliga-2024/web-laliga-2024-v4-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .laliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/laliga-2024/web-laliga-2024-v4-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+.laliga-2024 .container-copyline {
+    margin-top: 0%;
+}
+
+
+/****************************
+    serie A 2024
+*****************************/
+html:lang(en-US) .serie-a-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/serie-a-2024/web-serie-a-2024-v5-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .serie-a-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/serie-a-2024/web-serie-a-2024-v5-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .serie-a-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/serie-a-2024/web-serie-a-2024-v5-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .serie-a-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/serie-a-2024/web-serie-a-2024-v5-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/****************************
+    kleague2023
+*****************************/
+html:lang(en-US) .kleague2023 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/kleague2023/web-kleague2023-v2-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .kleague2023 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/kleague2023/web-kleague2023-v2-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+
+/****************************
+    bundesliga2024
+*****************************/
+html:lang(en-US) .bundesliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/bundesliga-2024/web-bundesliga-2024-v3-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .bundesliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/bundesliga-2024/web-bundesliga-2024-v3-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .bundesliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/bundesliga-2024/web-bundesliga-2024-v3-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .bundesliga-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/bundesliga-2024/web-bundesliga-2024-v3-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/****************************
+    chinesesuperleague2023
+*****************************/
+html:lang(th-TH) .chinesesuperleague2023 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/chinese-super-league-2023/web-chinese-super-league-match-25-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .chinesesuperleague2023 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/chinese-super-league-2023/web-chinese-super-league-match-25-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/****************************
+    vleague2024
+*****************************/
+html:lang(en-US) .vleague2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/vleague-2024/web-vleague-2024-v6-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .vleague2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/vleague-2024/web-vleague-2024-v6-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/****************************
+    Aff U23 2023
+*****************************/
+html:lang(en-US) .affu23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/aff-u23/web-aff-u23-cup-2023-v1-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .affu23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/aff-u23/web-aff-u23-cup-2023-v1-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .affu23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/aff-u23/web-aff-u23-cup-2023-v1-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .affu23 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/aff-u23/web-aff-u23-cup-2023-v1-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+
+/****************************
+    euro2024
+*****************************/
+
+html:lang(en-US) .euro2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/euro-2024/web-euro-2024-1-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .euro2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/euro-2024/web-euro-2024-1-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .euro2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/euro-2024/web-euro-2024-1-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .euro2024 {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/euro-2024/web-euro-2024-1-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+.euro2024 .container-copyline {
+    margin-top: 0;
+}
+
+
+/*=======================================================
+ FOOTBALL COMBINE 2023/2024
+=======================================================*/
+
+html:lang(en-US) .football-combine {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/football-combine/web-football-combine-en-2023.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .football-combine {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/football-combine/web-football-combine-vn-2023.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .football-combine {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/football-combine/web-football-combine-th-2023.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .football-combine {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/football-combine/web-football-combine-cn-2023.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================*/
+
+/*/*=======================================================
+ NEW MAIN SLOTS
+=======================================================*/
+
+
+html:lang(en-US) .main-slots {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/slots-main/web-main-slot-2024-en.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .main-slots {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/slots-main/web-main-slot-2024-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .main-slots {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/slots-main/web-main-slot-2024-th.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .main-slots {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/slots-main/web-main-slot-2024-cn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+.main-slots .main-slots-icons {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.main-slots .ms-icon {
+    position: absolute;
+    cursor: pointer;
+    animation: float 5s ease-in-out infinite;
+    -webkit-animation: float 5s ease-in-out infinite;
+}
+
+    .main-slots .ms-icon img {
+        transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+    }
+
+    .main-slots .ms-icon:hover img {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+
+    .main-slots .ms-icon.lucky-neko-icon {
+        animation-delay: 1s;
+        right: 2%;
+        top: 10%;
+    }
+
+    .main-slots .ms-icon.fortune-tree-icon {
+        animation-delay: 0;
+        right: 9%;
+        top: 20%;
+    }
+
+    .main-slots .ms-icon.lucky-piggy-icon {
+        animation-delay: 400ms;
+        right: -2%;
+        top: 30%;
+    }
+
+    .main-slots .ms-icon.rooster-rumble-icon {
+        animation-delay: 800ms;
+        right: 6%;
+        top: 40%;
+    }
+
+    .main-slots .ms-icon.mahjong-ways-icon {
+        left: 9%;
+        top: 14%;
+    }
+
+    .main-slots .ms-icon.fish-prawn-icon {
+        animation-delay: 400ms;
+        left: 9%;
+        top: 37%;
+    }
+
+    .main-slots .ms-icon.fish-prawn-icon {
+        animation-delay: 1s;
+        left: 9%;
+        top: 37%;
+    }
+
+    .main-slots .ms-icon.fortune-tiger-icon {
+        animation-delay: 0;
+        left: 1%;
+        top: 32%;
+    }
+
+    .main-slots .ms-icon.caishen-icon {
+        animation-delay: 800ms;
+        left: 1%;
+        top: 10%;
+    }
+
+.main-slots .main-slots-btn .slotBtn {
+    margin: 0;
+}
+
+
+@media (max-width: 1450px) {
+    .main-slots .ms-icon.lucky-neko-icon {
+        right: 0;
+    }
+
+    .main-slots .ms-icon.fortune-tree-icon {
+        right: 10%;
+    }
+
+    .main-slots .ms-icon.lucky-piggy-icon {
+        right: 0;
+    }
+
+    .main-slots .ms-icon.rooster-rumble-icon {
+        right: 10%;
+    }
+
+    .main-slots .ms-icon.mahjong-ways-icon {
+        left: 10%;
+    }
+
+    .main-slots .ms-icon.fish-prawn-icon {
+        left: 10%;
+    }
+
+    .main-slots .ms-icon.fish-prawn-icon {
+        left: 10%;
+    }
+
+    .main-slots .ms-icon.fortune-tiger-icon {
+        left: 0;
+    }
+
+    .main-slots .ms-icon.caishen-icon {
+        left: 0;
+    }
+
+    .main-slots .ms-icon img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-slots .main-slots-icons {
+        margin: 0 auto;
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes float {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*=======================================================
+AFC CHAMPIONSHIP 2024
+=======================================================*/
+
+html:lang(en-US) .afc-champ-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/afc-champ-league/web-afc-champ-league-v4-en.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .afc-champ-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/afc-champ-league/web-afc-champ-league-v4-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .afc-champ-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/afc-champ-league/web-afc-champ-league-v4-th.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .afc-champ-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/afc-champ-league/web-afc-champ-league-v4-cn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+LIGUE 1 2024
+=======================================================*/
+
+html:lang(en-US) .ligue-1-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/ligue-1-2024/web-ligue-1-2024-v3-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .ligue-1-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/ligue-1-2024/web-ligue-1-2024-v3-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .ligue-1-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/ligue-1-2024/web-ligue-1-2024-v3-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .ligue-1-2024 {
+    background: #e4e4e4 url(https://cdn.hanwei1234.com/Content/images/slider/ligue-1-2024/web-ligue-1-2024-v3-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/*=======================================================
+AFC 2024
+=======================================================*/
+
+html:lang(en-US) .afc-u23-asian {
+    background: #f8cb02 url(https://cdn.hanwei1234.com/Content/images/slider/afc-2024/web-afc-u23-asian-qf-2024-en.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .afc-u23-asian {
+    background: #f8cb02 url(https://cdn.hanwei1234.com/Content/images/slider/afc-2024/web-afc-u23-asian-qf-2024-vn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .afc-u23-asian {
+    background: #f8cb02 url(https://cdn.hanwei1234.com/Content/images/slider/afc-2024/web-afc-u23-asian-qf-2024-th.webp) no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .afc-u23-asian {
+    background: #f8cb02 url(https://cdn.hanwei1234.com/Content/images/slider/afc-2024/web-afc-u23-asian-qf-2024-cn.webp) no-repeat top center;
+    background-size: auto;
+}
+
+/*=======================================================
+NBA 2024
+=======================================================*/
+
+html:lang(en-US) .nba-2024 {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/nba-2024/web-nba-2024-v5-en.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .nba-2024 {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/nba-2024/web-nba-2024-v5-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+LCK SPRING 2024
+=======================================================*/
+
+html:lang(en-US) .lck-spring-2024 {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/lck-spring-2024/web-lck-spring-lol-2024-en.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .lck-spring-2024 {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/lck-spring-2024/web-lck-spring-lol-2024-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+THAI LEAGUE1 2024
+=======================================================*/
+
+.thai-league1 {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/thai-league1-2024/web-thai-league-v4.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+EUROPA LEAGUE
+=======================================================*/
+
+.europa-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/europa-league/web-europa-league-en.webp') no-repeat top center;
+    background-size: auto;
+}
+html:lang(vi-VN) .europa-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/europa-league/web-europa-league-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+/*=======================================================
+UEFA CHAMPION LEAGUE
+=======================================================*/
+
+.uefa-champion-final {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/uefa-champion-final/web-uefa-champion-final-en.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .uefa-champion-final {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/uefa-champion-final/web-uefa-champion-final-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .uefa-champion-final {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/uefa-champion-final/web-uefa-champion-final-th.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .uefa-champion-final {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/uefa-champion-final/web-uefa-champion-final-cn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+WORLD CUP ASIAN QUALIFIER
+=======================================================*/
+
+.worldcup-afc {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/worldcup-afc/web-afc-qualifiers-en-2024.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .worldcup-afc {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/worldcup-afc/web-afc-qualifiers-vn-2024.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(th-TH) .worldcup-afc {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/worldcup-afc/web-afc-qualifiers-th-2024.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(zh-CN) .worldcup-afc {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/worldcup-afc/web-afc-qualifiers-cn-2024.webp') no-repeat top center;
+    background-size: auto;
+}
+
+/*=======================================================
+ KOREA LEAGUE
+=======================================================*/
+
+.k-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/k-league/web-k-league-v1-en.webp') no-repeat top center;
+    background-size: auto;
+}
+
+html:lang(vi-VN) .k-league {
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/k-league/web-k-league-v1-vn.webp') no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+ EURO PROMO
+=======================================================*/
+.euro-ticket-lost {
+    background: url(https://cdn.hanwei1234.com/Content/images/slider/promotions/euro-ticket-lost-th/web-euro-ticket-lost-2024.webp) no-repeat top center;
+    background-size: auto;
+}
+
+
+/*=======================================================
+ EURO COUNTDOWN
+=======================================================*/
+
+.euro2024-cd {
+    position: relative;
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/euro2024-cd/web-euro2024-countdown.webp') no-repeat top center;
+    background-size: auto;
+}
+
+    .euro2024-cd.end-cd {
+        position: relative;
+        background: url('https://cdn.hanwei1234.com/Content/images/slider/euro2024-cd/web-euro-2024-aftercountdown.webp') no-repeat top center;
+        background-size: auto;
+    }
+
+
+
+
+.euro-cd {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 470px;
+    height: 130px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cdn.hanwei1234.com/Content/images/slider/euro2024-cd/euro-cd-bg.webp') no-repeat top center;
+    background-size: 100% 100%;
+    box-shadow: 0px 4px 5px 2px #000f5a;
+}
+.flipdown .rotor-group-heading:before {
+    text-shadow: 3px 3px 3px #00124c, 3px -3px 3px #00124c, -3px 3px 3px #00124c, -3px -3px 3px #00124c;
+}
+
+/*.flipdown .rotor-group .rotor-group-heading {
+    position: relative;
+    top: -2em;
+    margin-bottom: -1em; 
+    text-align: center; 
+}
+
+.flipdown .rotor-group .rotor-group-inner {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+}*/
+@media (max-width: 768px) {
+    .euro-cd {
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .euro-cd {
+        width: 350px;
+        height: 90px;
+    }
+    .flipdown .rotor {
+        font-size: 24px;
+        margin-right: 3px;
+    }
+}
+
+
