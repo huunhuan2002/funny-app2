@@ -23,9 +23,12 @@ router.get('/view-qr', function(req, res, next) {
 
 router.post('/update-payment', function(req, res) {
   const body = req.body;
-  req.session.money = body.money;
-
-  res.redirect('/payment/select-bank');
+  if (!body.money || Number.isNaN(body.money)) {
+    res.redirect('/payment');
+  } else {
+    req.session.money = body.money.replace(/\,/, '');
+    res.redirect('/payment/view-qr'); 
+  }
 })
 
 module.exports = router;

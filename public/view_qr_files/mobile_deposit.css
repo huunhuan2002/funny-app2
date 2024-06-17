@@ -1,0 +1,2123 @@
+/*å­˜æ¬¾å°ˆå€-æ”¯ä»˜ç³»çµ±åˆ—è¡¨*/
+.deposit_list {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 4%;
+    box-sizing: border-box;
+}
+
+    .deposit_list:not(.off):active {
+        background-color: #e8e8e8;
+    }
+
+    .deposit_list img {
+        width: 35px;
+        height: auto;
+        margin: 0 calc(10% - 17px);
+    }
+
+    .deposit_list .icon_Offer {
+        height: 100% !important;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        z-index: 1;
+    }
+
+    .deposit_list h3 {
+        color: #000;
+        font-size: 0.9em;
+        margin: 8px 0;
+        flex: 1;
+    }
+
+        .deposit_list h3 span {
+            font-size: 0.8em;
+            position: relative;
+            display: block;
+            line-height: 16px;
+            color: #f00;
+        }
+
+        .deposit_list h3 > .ic_info {
+            padding-left: 16px;
+        }
+
+            .deposit_list h3 > .ic_info:before {
+                content: '';
+                background: url(/images/icon_errorHint.svg) no-repeat center;
+                background-size: 100% auto;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+    .deposit_list .depositList {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .deposit_list a {
+        background: url(/images/icon_i.svg) no-repeat center;
+        height: 40px;
+        width: 40px;
+        background-size: 55% auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+        .deposit_list a:active {
+            opacity: .8;
+        }
+
+@media (min-width: 350px) {
+    .deposit_list {
+        min-height: 53px;
+    }
+
+        .deposit_list h3 span {
+            line-height: 17px;
+        }
+
+        .deposit_list h3 > .ic_info {
+            padding-left: 17px;
+        }
+
+            .deposit_list h3 > .ic_info:before {
+                width: 13px;
+                height: 13px;
+            }
+}
+
+@media (min-width: 400px) {
+    .deposit_list {
+        margin-bottom: 15px;
+        min-height: 59px;
+    }
+
+        .deposit_list h3 {
+            margin: 10px 0;
+        }
+
+            .deposit_list h3 span {
+                line-height: 19px;
+            }
+
+        .deposit_list img {
+            width: 45px;
+        }
+
+        .deposit_list a {
+            height: 45px;
+            width: 45px;
+        }
+}
+
+/*ç´¢å–å„²å€¼å¸³è™Ÿ-è¯ç¹«å®¢æœ*/
+.bankAccount {
+    text-align: center;
+}
+
+    .bankAccount img {
+        width: 84px;
+        height: 84px;
+        margin: 40px auto 15px auto;
+    }
+
+.bankAccount_text {
+    font-size: 1.2em;
+    color: #2782d7;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+@media (min-width: 400px) {
+    .bankAccount img {
+        width: 110px;
+        height: 110px;
+        margin: 45px auto 20px auto;
+    }
+}
+
+/*å±•é–‹é¸å–®-é‡‘æµé¸æ“‡*/
+.deposit_select {
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9em;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.btn_depositSelect_T {
+    font-size: 1.05em;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+}
+
+    .btn_depositSelect_T > div {
+        width: 92%;
+        margin: 0 auto;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 40px 0 10px;
+    }
+
+    .btn_depositSelect_T:after {
+        content: "";
+        background: url(/images/icon_arrow.svg) no-repeat center;
+        background-size: 100% auto;
+        position: absolute;
+        right: 4%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 15px;
+        height: 15px;
+    }
+
+    .btn_depositSelect_T.on:after {
+        -webkit-transform: rotate( 180deg);
+        transform: rotate( 180deg);
+    }
+
+.deposit_eBanking:before, .deposit_ATM:before, .deposit_qr:before,
+.deposit_NHDT:before, .deposit_CTQ:before, .deposit_zalo:before, .deposit_momo:before,
+.deposit_Viettelpay:before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: left center;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+}
+
+.deposit_eBanking:before {
+    background-image: url(/images/icon_online.svg);
+}
+
+.deposit_ATM:before {
+    background-image: url(/images/icon_atm.svg);
+}
+
+.deposit_qr:before {
+    background-image: url(/images/icon_qrCode.svg);
+}
+
+.deposit_NHDT:before {
+    background-image: url(/images/icon_netBank.svg);
+}
+
+.deposit_CTQ:before {
+    background-image: url(/images/icon_webBank.svg);
+}
+
+.deposit_zalo:before {
+    background-image: url(/images/icon_zaloPay.svg);
+}
+
+.deposit_Viettelpay:before {
+    background-image: url(/images/icon_viettelpay.svg);
+}
+
+.deposit_momo:before {
+    background-image: url(/images/icon_momo.svg);
+}
+
+.depositSelect_In {
+    padding: 15px 0 5px;
+    border-top: 1px solid #ddd;
+    display: none;
+    background-color: #eee;
+}
+
+    .depositSelect_In ul {
+        display: table;
+        width: 100%;
+    }
+
+    .depositSelect_In li {
+        position: relative;
+        font-size: 1.05em;
+        color: #666;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        height: 50px;
+        width: 92%;
+        padding: 0 40px 0 10px;
+        margin-left: 4%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+        .depositSelect_In li.on {
+            background-color: #fff;
+            color: #2782d7;
+            border: 1px solid #2782d7;
+            background-color: #daf1ff;
+        }
+
+        .depositSelect_In li a {
+            background: url(/images/icon_closeBank.svg) no-repeat;
+            background-size: 100% auto;
+            width: 24px;
+            height: 24px;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            z-index: 2;
+        }
+
+            .depositSelect_In li a:active {
+                opacity: .8;
+            }
+
+.btn_RMBbank {
+    width: 122px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+    .btn_RMBbank img {
+        height: 20px;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    .btn_RMBbank span {
+        max-width: calc(100% - 23px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+.bankBtn {
+    width: 100px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.withdraw_number {
+    line-height: 1em;
+}
+
+.img_withdraw {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.withdraw_more {
+    justify-content: center !important;
+    padding: 0 !important;
+    line-height: 1em;
+}
+
+@media (min-width: 350px) {
+    .btn_depositSelect_T > div,
+    .depositSelect_In li {
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+
+        .depositSelect_In li a {
+            right: 15px;
+        }
+}
+
+@media (min-width: 400px) {
+    .btn_depositSelect_T {
+        height: 60px;
+    }
+
+    .depositSelect_In li {
+        height: 54px;
+    }
+
+    .btn_RMBbank {
+        width: 131px;
+        height: 40px;
+    }
+
+        .btn_RMBbank img {
+            margin-right: 8px;
+        }
+
+        .btn_RMBbank span {
+            max-width: calc(100% - 26px);
+        }
+
+    .bankBtn {
+        width: 109px;
+    }
+}
+
+@media (min-width: 530px) {
+    .btn_depositSelect_T > div,
+    .depositSelect_In li {
+        padding-right: 54px;
+    }
+}
+
+@media (min-width: 768px) {
+    .depositSelect_In li {
+        width: 44% !important;
+        float: left;
+    }
+}
+
+.form_button .w50L {
+    color: #45b5d9;
+    border: 1px solid #45b5d9;
+    background-color: #fff;
+    width: 48%;
+}
+
+.form_button .w50R {
+    width: 48%;
+}
+
+.btn_example {
+    text-decoration: underline;
+    color: #006cff;
+    cursor: pointer;
+}
+
+.img_zaloPayEX {
+    width: 100%;
+    max-width: 432px;
+    height: auto;
+    margin: auto;
+    display: table;
+}
+
+.popup_In .img_zaloPayEX {
+    margin: 18px auto 12px;
+}
+
+.txt_prompt {
+    position: absolute;
+    display: none;
+    font-size: 0.7em;
+}
+
+    .txt_prompt p {
+        position: relative;
+        background-color: #f90;
+        color: #fff;
+        padding: 6px 10px 5px;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        margin: 0;
+        line-height: 1.35em;
+        white-space: nowrap;
+    }
+
+        .txt_prompt p:after {
+            content: '';
+            visibility: visible;
+            position: absolute;
+            bottom: -8px;
+            left: 10px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 9px 9px 0;
+            border-color: transparent #f90 transparent transparent;
+        }
+
+@media (min-width: 400px) {
+    .popup_In .img_zaloPayEX {
+        margin: 20px auto 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .txt_prompt {
+        font-size: 0.9em;
+    }
+}
+
+/*å½ˆè·³è¦–çª—å…§å®¹-é‡‘é¡åŒ¯å‡ºæé†’*/
+.deposit_submitT {
+    margin: 0.5em 1em 0;
+    text-align: center;
+}
+
+.deposit_submit_sum {
+    color: #f00;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.deposit_submit_text {
+    margin: 0 1em;
+    text-align: center;
+}
+
+.accountID {
+    color: #2782d7;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*å½ˆè·³è¦–çª—å…§å®¹-æ”¯ä»˜å®é‡‘é¡åŒ¯å‡ºæé†’*/
+.deposit_alipaySubmit_T {
+    font-size: 0.9em;
+    margin: 0 10px 30px;
+}
+
+.deposit_alipaySubmit_text {
+    margin: 10px;
+    color: #666;
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+@media (min-width: 400px) {
+    .deposit_alipaySubmit_T {
+        margin-bottom: 35px;
+    }
+}
+
+/*ç¶²è·¯é“¶è¡Œ-å…§å®¹*/
+.netbank {
+    background-color: #fff;
+}
+
+.netbank_T {
+    text-align: center;
+    color: #2782d7;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+    .netbank_T + .form li:first-child {
+        border-top: 0;
+    }
+
+.netbank_In {
+    font-size: 0.9em;
+    padding: 8px 0;
+    display: table;
+    width: 92%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+    .netbank_In ul {
+        display: table-row;
+        width: 100%;
+    }
+
+        .netbank_In ul:last-child li {
+            padding-bottom: 0;
+        }
+
+    .netbank_In li {
+        display: table-cell;
+        padding-bottom: 5px;
+        vertical-align: top;
+        line-height: 1.4em;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+.netbank_listT {
+    width: 102px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+    .netbank_listT + select {
+        font-size: 0.9em;
+    }
+
+.netbank_listID {
+    padding-right: 50px;
+    word-break: break-all;
+}
+
+.netbank_listC {
+    width: calc(100% - 63px);
+    float: left;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+    .netbank_listC > span {
+        display: table-cell;
+        float: left;
+    }
+
+.wordBreak {
+    word-break: break-all;
+}
+
+.netbank_listT_noW {
+    color: #aaa;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.netbank_listIn {
+    word-break: break-all;
+}
+
+.netbank_listCopy {
+    width: 50px;
+}
+
+.btn_copy {
+    background-color: #2782d7;
+    color: #fff;
+    font-size: 0.8em;
+    border-radius: 2px;
+    padding: 1px 8px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+    .btn_copy:active {
+        opacity: 0.8;
+    }
+
+.netbank_money {
+    color: #ff3b30;
+    font-size: 1.7em;
+    border-radius: 2px;
+    padding: 8px 0;
+    border: 1px solid #a0a0a0;
+    text-align: center;
+    margin: 5px 0;
+    width: 100%;
+    float: left;
+}
+
+    .netbank_money + .btn_copy {
+        top: 45%;
+        transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -webkit-transform: translate(0,-50%);
+        -o-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+    }
+
+.depositHint {
+    color: #f00;
+    position: relative;
+    height: 1.4em;
+    line-height: 1.4em;
+    padding-bottom: 5px;
+}
+
+    .depositHint span {
+        position: absolute;
+        left: 0;
+        white-space: nowrap;
+    }
+
+.netbank_In .depositHint:last-child {
+    padding: 0;
+}
+
+@media (min-width: 350px) {
+    .netbank_listT {
+        width: 112px;
+    }
+}
+
+@media (min-width: 400px) {
+    .netbank_T {
+        height: 46px;
+    }
+
+    .netbank_In {
+        padding: 15px 0;
+    }
+
+        .netbank_In li {
+            padding-bottom: 6px;
+        }
+
+    .netbank_listT {
+        width: 122px;
+    }
+
+    .netbank_listID {
+        padding-right: 70px;
+    }
+
+    .netbank_listCopy {
+        width: 54px;
+    }
+
+    .btn_copy {
+        border-radius: 3px;
+        padding: 1px 15px;
+    }
+
+    .netbank_money {
+        border-radius: 3px;
+        padding: 10px 0;
+    }
+
+    .depositHint {
+        padding-bottom: 6px;
+    }
+}
+
+/*é‡‘æµ-å­é …ç›®*/
+[class*="deposit_subList"] {
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 4%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    [class*="deposit_subList"] .at {
+        background-color: #fff;
+        border: 1px solid #95b5d3;
+        color: #2782d7;
+    }
+
+        [class*="deposit_subList"] .at img {
+            opacity: 1;
+        }
+
+.btn_subList {
+    background-color: #eee;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+    max-width: 48%;
+}
+
+.btn_subList_img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5.5%;
+}
+
+    .btn_subList_img img {
+        max-width: 28px;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+
+.btn_subList_T {
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.deposit_subList {
+    flex-wrap: wrap;
+}
+
+    .deposit_subList .btn_subList {
+        width: 48%;
+        font-size: 0.85em;
+        padding: 5px 1.5%;
+    }
+
+        .deposit_subList .btn_subList:nth-child(2) ~ .btn_subList {
+            margin-top: 10px;
+        }
+
+    .deposit_subList .btn_subList_img {
+        width: 20%;
+    }
+
+    .deposit_subList .btn_subList_T {
+        width: 80%;
+    }
+
+.deposit_subList_33 {
+}
+
+    .deposit_subList_33 .btn_subList {
+        font-size: 0.8em;
+        flex: 1;
+        justify-content: center;
+    }
+
+        .deposit_subList_33 .btn_subList + .btn_subList {
+            margin-left: 10px;
+        }
+
+    .deposit_subList_33 .btn_subList_img {
+        display: none;
+    }
+
+@media (min-width: 350px) {
+    .btn_subList {
+        border-radius: 3px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 400px) {
+    .btn_subList {
+        height: 48px;
+    }
+
+    .btn_subList_img img {
+        max-width: 35px;
+    }
+
+    .deposit_subList .btn_subList {
+        padding: 5px 2%;
+    }
+
+    .deposit_subList .btn_subList_img {
+        width: 22%;
+    }
+
+    .deposit_subList .btn_subList_T {
+        width: 78%;
+    }
+
+    .deposit_subList_33:not(.pad) .btn_subList_T {
+        width: 70%;
+        margin-left: -5%;
+    }
+
+    .deposit_subList_33:not(.pad) .btn_subList_img {
+        display: flex;
+    }
+}
+
+@media (min-width: 530px) {
+    .deposit_subList .btn_subList {
+        padding: 5px 4%;
+    }
+
+    .deposit_subList_33:not(.pad) .btn_subList_T {
+        width: 55%;
+        margin-left: 0;
+    }
+
+    .deposit_subList_33.pad .btn_subList_T {
+        width: 73%;
+        margin-left: -5%;
+    }
+
+    .deposit_subList_33.pad .btn_subList_img {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .deposit_subList .btn_subList {
+        padding: 5px 6%;
+    }
+
+    .deposit_subList_33.pad .btn_subList_T {
+        width: 60%;
+        margin-left: 0;
+    }
+}
+
+.maintainError, .maintainNormal {
+    font-size: 1.1em;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.maintainError {
+    color: #ff3b30;
+    background-image: url(/images/icon_maintainError.svg);
+    margin-bottom: 10px;
+}
+
+.maintainNormal {
+    color: #5bb947;
+    background-image: url(/images/icon_maintainNormal.svg);
+}
+
+.depositFormT {
+    text-align: center;
+    color: #2782d7;
+    font-size: 0.9em;
+    background-color: #fff;
+    height: 36px;
+    line-height: 36px;
+    display: table-caption;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.depositFormL {
+    display: table-cell;
+}
+
+    .depositFormL li {
+        padding-left: calc((100% + 98px)*0.04) !important;
+        padding-right: 8px !important;
+    }
+
+.depositFormR {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 98px;
+    padding: 8px;
+}
+
+    .depositFormR .QRcode {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        display: table-cell;
+    }
+
+.form_QR {
+    width: 130px !important;
+    height: 130px !important;
+    border: 5px solid #508cc2 !important;
+    padding: 0 !important;
+    margin: 13px auto;
+    background-color: transparent !important;
+    display: block !important;
+}
+
+    .form_QR:before, .form_QR:after {
+        content: '';
+        background-color: #f0eff5;
+        position: absolute;
+        left: -9px;
+        right: -9px;
+        top: -9px;
+        bottom: -9px;
+        margin: auto;
+    }
+
+    .form_QR:before {
+        width: 90px;
+    }
+
+    .form_QR:after {
+        height: 93px;
+    }
+
+    .form_QR > div {
+        color: #2b67a3;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 110px;
+    }
+
+    .form_QR .QRcode {
+        width: 120px;
+        height: 120px;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        display: table-cell;
+    }
+
+@media (min-width: 350px) {
+    .form_QR {
+        width: 145px !important;
+        height: 145px !important;
+    }
+
+        .form_QR:before {
+            width: 101px;
+        }
+
+        .form_QR:after {
+            height: 105px;
+        }
+
+        .form_QR > div {
+            line-height: 125px;
+        }
+
+        .form_QR .QRcode {
+            width: 135px;
+            height: 135px;
+        }
+}
+
+@media (min-width: 375px) {
+    .form_QR {
+        width: 155px !important;
+        height: 155px !important;
+    }
+
+        .form_QR:before {
+            width: 108px;
+        }
+
+        .form_QR:after {
+            height: 113px;
+        }
+
+        .form_QR > div {
+            line-height: 135px;
+        }
+
+        .form_QR .QRcode {
+            width: 145px;
+            height: 145px;
+        }
+}
+
+@media (min-width: 400px) {
+    .maintainWechat {
+        padding: 0 20px 25px 20px;
+    }
+
+    .maintainError, .maintainNormal {
+        padding-left: 23px;
+        background-size: 20px 20px;
+    }
+
+    .depositFormT {
+        height: 46px;
+        line-height: 46px;
+    }
+
+    .depositFormL li {
+        padding-left: calc((100% + 120px)*0.04) !important;
+    }
+
+    .depositFormR {
+        width: 120px;
+    }
+
+    .form_QR {
+        width: 170px !important;
+        height: 170px !important;
+        margin: 17px auto;
+        border-width: 6px !important;
+    }
+
+        .form_QR:before {
+            width: 123px;
+        }
+
+        .form_QR:after {
+            height: 128px;
+        }
+
+        .form_QR > div {
+            line-height: 146px;
+        }
+
+        .form_QR .QRcode {
+            width: 158px;
+            height: 158px;
+        }
+}
+
+/*@media (min-width: 414px) {
+    .depositFormR {
+        width: 176px;
+    }
+}*/
+
+@media (min-width:530px) {
+    .depositFormL li {
+        padding: 0 calc((100% + 170px)*0.04) !important;
+    }
+
+    .depositFormR {
+        width: 170px;
+        padding: 8px 4%;
+    }
+}
+
+@media (min-width:768px) {
+    .depositFormL li {
+        padding: 0 calc((100% + 190px)*0.04) !important;
+    }
+
+    .depositFormR {
+        width: 190px;
+    }
+}
+
+/*é“¶è¡Œé¸æ“‡*/
+.RMBbankT {
+    text-align: center;
+    color: #898989;
+    font-size: 0.9em;
+    margin: 10px auto;
+}
+
+.container_main .RMBbank {
+    background-color: #fff;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 2px 0;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+    .container_main .RMBbank img {
+        width: auto;
+        height: 105%;
+        max-width: 90%;
+        max-height: 100%;
+        border: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+.RMBbank_list {
+    z-index: 1;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 44%;
+    margin-left: 4%;
+    float: left;
+}
+
+    .RMBbank_list.on {
+        border: 2px solid #f00;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+        .RMBbank_list.on img {
+            max-width: calc( 90% + 2px);
+            max-height: calc( 100% + 2px);
+        }
+
+        .RMBbank_list.on:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1px;
+            border-style: solid;
+            border-width: 0 22px 19px 0;
+            border-color: transparent #ff7070 transparent transparent;
+            z-index: 1;
+        }
+
+        .RMBbank_list.on:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(/images/icon_bankSelect.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 11px;
+            height: 11px;
+            z-index: 1;
+        }
+
+.maskRed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(255,0,0,0.2);
+    z-index: 1;
+}
+
+.RMBbank_list.on:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 22px 19px 0;
+    border-color: transparent #f00 transparent transparent;
+    z-index: 1;
+}
+
+.RMBbank_list.on:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(/images/btn_confirm.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 11px;
+    height: 11px;
+    z-index: 2;
+}
+
+@media (min-width: 400px) {
+    .container_main .RMBbank {
+        padding: 13px 0 3px;
+    }
+
+    .container_main .RMBbank_list {
+        height: 55px;
+        border-radius: 3px;
+        margin-bottom: 17px;
+    }
+
+        .container_main .RMBbank_list.on:before {
+            border-width: 0 29px 25px 0;
+        }
+
+        .container_main .RMBbank_list.on:after {
+            width: 15px;
+            height: 15px;
+        }
+}
+
+@media (min-width: 768px) {
+    .RMBbank_list.on img {
+        max-width: calc( 90% + 4px);
+        max-height: calc( 100% + 4px);
+    }
+}
+
+/*æŸ¥è©¢å¾Œ5ä½æ•¸*/
+.form_fiveNum {
+}
+
+    .form_fiveNum .form_In input,
+    .form_fiveNum .keyboard {
+        width: calc(100% - 25px);
+    }
+
+    .form_fiveNum .form_In img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        right: -0.5%;
+        width: 20px;
+        cursor: pointer;
+    }
+
+@media (min-width: 400px) {
+    .form_fiveNum .form_In img {
+        width: 25px;
+    }
+
+    .form_fiveNum .form_In input,
+    .form_fiveNum .keyboard {
+        width: calc(100% - 35px);
+    }
+}
+
+@media (min-width: 768px) {
+    .form_fiveNum .form_In img {
+        right: -2px;
+    }
+}
+
+.FiveNum {
+    margin-top: 12px;
+}
+
+.FiveNum_list {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+    .FiveNum_list h5 {
+        color: #2c82bb;
+        font-size: 0.85em;
+        padding: 0 12px;
+        line-height: 40px;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.95em;
+        margin: 0 0 13px 0;
+        background-color: #fff;
+    }
+
+    .FiveNum_list img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+@media (min-width:400px) {
+    .FiveNum {
+        margin-top: 15px;
+    }
+
+    .FiveNum_list {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+        .FiveNum_list h5 {
+            margin-bottom: 15px;
+            line-height: 55px;
+        }
+
+        .FiveNum_list img {
+            margin-bottom: 15px;
+        }
+}
+
+@media (min-width: 768px) {
+    .FiveNum {
+        padding: 0 2%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .FiveNum_list {
+        height: 580px;
+        border: 1px solid #ddd;
+    }
+
+        .FiveNum_list:nth-child(odd) {
+            float: left;
+            width: 49%;
+        }
+
+        .FiveNum_list:nth-child(even) {
+            float: right;
+            width: 49%;
+        }
+
+        .FiveNum_list img {
+            width: auto;
+            max-height: 500px;
+            max-width: 280px;
+        }
+}
+
+/*QRCODEæ”¯ä»˜*/
+.QRbody {
+    background: #e3f6ff url(/images/bg_QRcode.png) no-repeat center top;
+    background-size: cover;
+}
+
+.QRpay {
+    font-size: 0.815em;
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+    .QRpay > div {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10% 0;
+    }
+
+.QRpay_logo {
+    padding-top: calc(10% + 45px);
+}
+
+.QRpay_code {
+    position: relative;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 360px;
+    margin: auto;
+    display: table;
+}
+
+.img_QRlogo {
+    height: 32px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -45px;
+}
+
+.QRpay_codeT {
+    border-bottom: 1px solid #e7e8ea;
+    margin: auto;
+    width: 95%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .QRpay_codeT .t_blue {
+        font-size: 1.7em;
+        color: #2c5e99 !important;
+        margin-right: 5px;
+        font-weight: 500;
+    }
+
+.QRpay_codeB {
+    display: table;
+    margin: 15px auto 20px;
+    min-width: 225px;
+}
+
+[class*="QRpay_num"] {
+    position: relative;
+}
+
+    [class*="QRpay_num"].t_red {
+        color: #e3464c !important;
+    }
+
+    [class*="QRpay_num"] + [class*="QRpay_num"] {
+        margin-top: 5px;
+    }
+
+    [class*="QRpay_num"] .t_green {
+        color: #1e9d00
+    }
+
+    [class*="QRpay_num"] .btn_copy {
+        line-height: 1.4em;
+        background-color: #3ba9b5;
+        padding: 1px 5px;
+        font-size: 0.85em;
+    }
+
+.QRpay_numL {
+    text-align: left;
+}
+
+.QRpay_txt {
+    width: 132px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.QRpay_img {
+    width: 170px;
+    height: 170px;
+    border: 3px solid red;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+    .QRpay_img + * {
+        margin-top: 15px;
+    }
+
+    .QRpay_img:before, .QRpay_img:after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        left: -3px;
+        right: -3px;
+        top: -3px;
+        bottom: -3px;
+        margin: auto;
+    }
+
+    .QRpay_img:before {
+        width: 75%;
+    }
+
+    .QRpay_img:after {
+        height: 75%;
+    }
+
+    .QRpay_img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+.QRpay_time {
+    font-size: 1.7em;
+    line-height: 1em;
+    color: #f00;
+    white-space: nowrap;
+}
+
+    .QRpay_time:before {
+        content: "";
+        background: url(/images/icon_time.svg) no-repeat center;
+        background-size: 100% auto;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-top: -3px;
+    }
+
+.QRpay_note {
+    width: 90%;
+    max-width: 360px;
+    min-height: 56px;
+    color: #e3464c;
+    margin: 25px auto 0;
+    border-radius: 10px;
+    padding: 10px 10px 10px 55px;
+    box-sizing: border-box;
+    background-color: #fafbfd;
+    border: 1px solid #f7c5c6;
+    line-height: 18px;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+}
+
+    .QRpay_note:before {
+        content: "";
+        width: 45px;
+        height: 100%;
+        background: #df464b url(/images/icon_light.svg) no-repeat center;
+        background-size: 65% auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+ul.QRpay_note {
+    margin-top: 15px;
+    padding: 8px 8px 8px 70px;
+}
+
+.QRpay_note li {
+    list-style: decimal;
+}
+
+    .QRpay_note li + li {
+        margin-top: 5px;
+    }
+
+@media (min-width:350px) {
+    .QRpay_code, .QRpay_note {
+        width: 87%;
+    }
+}
+
+@media (min-width:375px) {
+    ul.QRpay_note {
+        padding-left: 75px;
+    }
+}
+
+@media (min-width:400px) {
+    .QRpay {
+        font-size: 0.835em;
+    }
+
+    .QRpay_logo {
+        padding-top: calc(10% + 55px);
+    }
+
+    .img_QRlogo {
+        height: 38px;
+        top: -55px;
+    }
+
+    .QRpay_codeT {
+        padding: 20px 0;
+    }
+
+        .QRpay_codeT .t_blue {
+            font-size: 1.7em;
+        }
+
+    .QRpay_codeB {
+        margin: 20px auto 25px;
+        min-width: 250px;
+    }
+
+    .QRpay_img {
+        width: 220px;
+        height: 220px;
+        border: 3px solid red;
+        padding: 8px;
+    }
+
+        .QRpay_img + * {
+            margin-top: 20px;
+        }
+
+    .QRpay_time {
+        font-size: 1.7em;
+    }
+
+        .QRpay_time:before {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+        }
+
+    .QRpay_txt {
+        width: 150px;
+    }
+
+    .QRpay_note {
+        margin-top: 35px;
+        min-height: 76px;
+        padding: 15px 15px 15px 70px;
+        line-height: 23px;
+    }
+
+        .QRpay_note:before {
+            width: 55px;
+        }
+
+    ul.QRpay_note {
+        margin-top: 20px;
+        padding: 10px 10px 10px 90px;
+        line-height: 20px;
+    }
+}
+
+/*QRCODEé‡å°å°ºå¯¸èª¿æ•´*/
+.qrBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#img_qr01 {
+    position: absolute;
+    width: 117%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+/*åˆ°å¸æ—¶é—´*/
+.btn_time {
+    padding: 5px 5px 5px 25px;
+    margin-left: 15px;
+    background-color: #4a80a3;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(/images/icon_time.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+    .btn_time:before {
+        content: '';
+        border-color: transparent #4a80a3 transparent transparent;
+        border-width: 7px 10px 7px 0;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0px;
+        left: -7px;
+        bottom: 0px;
+        margin: auto;
+    }
+
+.popup_img {
+    width: 100%;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+
+@media (min-width: 400px) {
+    .popup_img {
+        margin-bottom: 10px;
+    }
+}
+
+/*è¯ç¹«å®¢æœ*/
+.withdrawIMG {
+    width: auto;
+    height: 84px;
+    margin: 40px auto 15px;
+    display: block;
+}
+
+.withdraw_list { /*-*/
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    padding: 0 4%;
+    box-sizing: border-box;
+    font-size: 0.95em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .withdraw_list + .withdraw_list,
+    .withdraw_list + .withdrawTxt {
+        margin-top: 12px;
+    }
+
+/*    .withdraw_list li {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.withdraw_InL {
+    width: 30%;
+    text-align: center;
+}*/ /*-*/
+
+.withdraw_InL img {
+    margin: auto;
+    width: auto;
+    height: 38px;
+    display: block;
+}
+
+.withdraw_InC { /*-*/
+    width: 70px;
+}
+
+.withdraw_InR { /*-*/
+    word-break: break-all;
+    width: 48%;
+}
+
+    .withdraw_InR span {
+        color: #2782d7;
+    }
+
+.withdrawTxt {
+    color: red;
+    text-align: center;
+    font-size: 0.95em;
+    padding: 0 4%;
+}
+
+.form .withdrawTxt {
+    font-size: 0.75em;
+    margin-top: 21px;
+}
+
+@media (min-width: 350px) { /*-*/
+    .withdraw_InC {
+        width: 75px;
+    }
+}
+
+@media (min-width: 400px) {
+    .withdraw_list {
+        height: 70px;
+    }
+
+        .withdraw_list + .withdraw_list,
+        .withdraw_list + .withdrawTxt {
+            margin-top: 15px;
+        }
+
+    .form .withdrawTxt {
+        margin-top: 27px;
+    }
+
+    .withdraw_InL img {
+        height: 50px;
+    }
+
+    .withdraw_InC { /*-*/
+        width: 85px;
+    }
+
+    .withdraw_InR { /*-*/
+        width: 45%;
+    }
+
+    .withdrawIMG {
+        height: 110px;
+        margin: 45px auto 20px;
+    }
+}
+
+@media (min-width: 530px) {
+    .withdraw_InR {
+        width: 35%;
+    }
+
+    .form .withdrawTxt {
+        font-size: 0.95em;
+    }
+}
+
+/*@media (min-width: 768px) {
+    .withdraw_InR {
+        width: 25%;
+    }
+}*/ /*-*/
+
+/*æ³¡æ³¡æç¤ºè¦–çª—*/
+.txt_prompt.top {
+    bottom: 57px;
+    background-color: #f90;
+    color: #fff;
+    padding: 6px 10px 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    line-height: 1.35em;
+    z-index: 2;
+}
+
+    .txt_prompt.top:before {
+        content: '';
+        position: absolute;
+        right: 10px;
+        border-style: solid;
+        top: auto;
+        bottom: -8px;
+        border-width: 9px 9px 0 0;
+        border-color: #f90 transparent transparent transparent;
+    }
+
+    .txt_prompt.top div {
+        display: table-cell;
+    }
+
+        .txt_prompt.top div:first-child {
+            width: 1%;
+            white-space: nowrap;
+        }
+
+@media (min-width: 400px) {
+    .txt_prompt.top {
+        bottom: 69px;
+    }
+}
+
+@media (min-width: 768px) {
+    .txt_prompt.top {
+        bottom: 73px;
+    }
+}
+
+/*ç¸®æ¸›é–“è·/é€å‡ºæŒ‰éˆ•/æ³¨æ„äº‹é¡¹/keyType*/
+.marginTop,
+.precautions + .precautions {
+    margin-top: 12px;
+}
+
+.marginBottom {
+    margin-bottom: 12px;
+}
+
+@media (min-width: 400px) {
+    .marginTop,
+    .precautions + .precautions {
+        margin-top: 15px;
+    }
+
+    .marginBottom {
+        margin-bottom: 15px;
+    }
+}
+
+/*è—ç°åº•æ¨£å¼-è¦†è“‹form.cssç„å½±éŸ¿*/
+.bodyForm {
+    background-color: #f0eff5;
+}
+
+    .bodyForm ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #888;
+    }
+
+    .bodyForm ::-moz-placeholder { /* Firefox 19+ */
+        color: #888;
+    }
+
+    .bodyForm :-ms-input-placeholder { /* IE 10+ */
+        color: #888;
+    }
+
+    .bodyForm :-moz-placeholder { /* Firefox 18- */
+        color: #888;
+    }
+
+    .bodyForm .error ::-webkit-input-placeholder {
+        color: #8f8f8f;
+    }
+
+    .bodyForm .error ::-moz-placeholder {
+        color: #8f8f8f;
+    }
+
+    .bodyForm .error :-ms-input-placeholder {
+        color: #8f8f8f;
+    }
+
+    .bodyForm .error :-moz-placeholder {
+        color: #8f8f8f;
+    }
+
+    .bodyForm input[type="button"]:disabled,
+    .bodyForm input[type="button"][class*=off] {
+        background-color: #aaa !important;
+    }
+
+    .bodyForm .form {
+        padding: 0;
+    }
+
+        .bodyForm .form + ul .numInputArea {
+            margin-bottom: 0 !important;
+        }
+
+        .bodyForm .form li {
+            height: 48px;
+            padding: 0 4%;
+            border-bottom: 0;
+            border-top: 1px solid #ddd;
+            display: table;
+        }
+
+            .bodyForm .form li:nth-last-child(1) {
+                border-bottom: 1px solid #ddd;
+            }
+
+            .bodyForm .form li + li:not(.keySetting) {
+                margin-top: 0;
+            }
+
+            .bodyForm .form li[class*="error"] {
+                border-color: #ff3b30;
+                background-color: #ffd5d5;
+            }
+
+                .bodyForm .form li[class*="error"]:not(:last-child) {
+                    margin-bottom: 21px !important;
+                }
+
+                .bodyForm .form li[class*="error"]:last-child {
+                    margin-bottom: 9px !important;
+                }
+
+            .bodyForm .form li .error_t {
+                right: 4%;
+                text-align: right;
+                bottom: -22px;
+                line-height: 21px;
+            }
+
+    .bodyForm .form_T {
+        width: 88px;
+        padding-right: 8px;
+        font-size: 0.9em;
+    }
+
+    .bodyForm .form_In {
+        width: auto;
+        color: #888;
+    }
+
+        .bodyForm .form_In input {
+            height: 48px;
+            font-size: 0.9em;
+        }
+
+        .bodyForm .form_In .btn_closeKB {
+            height: 100%;
+            width: 20px;
+        }
+
+        .bodyForm .form_In .keyboard {
+            height: 48px;
+            line-height: 48px;
+            padding-right: 25px;
+            font-size: 0.9em;
+        }
+
+            .bodyForm .form_In .keyboard:not(.keyIn) {
+                color: #888;
+            }
+
+        .bodyForm .form_In .txt_prompt {
+            top: auto;
+            left: 0;
+            right: auto;
+            bottom: 57px;
+        }
+
+        .form_T_VN,
+        .form_T_VN05,
+        .form_T_VN10,
+        .form .netbank_listT,
+        .bodyForm .form_In span {
+            font-size: 0.9em;
+        }
+
+    .bodyForm .keySetting .numInputArea {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+        width: 92%;
+    }
+
+    .bodyForm .form_button {
+        margin-top: 0;
+        padding: 12px 4%;
+    }
+
+        .bodyForm .form_button input {
+            border-radius: 2px;
+            font-size: 0.9em;
+            height: 40px;
+        }
+
+    .bodyForm .form_hint {
+        justify-content: center;
+    }
+
+@media (min-width: 350px) {
+    .bodyForm .form_T {
+        width: 98px;
+    }
+}
+
+@media (min-width: 400px) {
+    .bodyForm .form li,
+    .bodyForm .form_In input {
+        height: 60px;
+    }
+
+        .bodyForm .form li[class*="error"]:not(:last-child) {
+            margin-bottom: 27px !important;
+        }
+
+        .bodyForm .form li[class*="error"]:last-child {
+            margin-bottom: 12px !important;
+        }
+
+        .bodyForm .form li .error_t {
+            bottom: -28px;
+            line-height: 27px;
+        }
+
+    .bodyForm .form_T {
+        width: 105px;
+        padding-right: 15px;
+    }
+
+    .bodyForm .form_In .btn_closeKB {
+        background-size: auto 25px;
+        width: 25px;
+    }
+
+    .bodyForm .form_In .keyboard {
+        height: 60px;
+        line-height: 60px;
+        padding-right: 35px;
+    }
+
+    .bodyForm .form_In .txt_prompt {
+        bottom: 69px;
+    }
+
+    .bodyForm .keySetting .numInputArea {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .bodyForm .form_button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+        .bodyForm .form_button input {
+            border-radius: 3px;
+            height: 52px;
+        }
+}
+
+@media (min-width: 530px) {
+    .bodyForm .keySetting .numInputArea {
+        width: 68%;
+    }
+}

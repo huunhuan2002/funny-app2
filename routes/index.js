@@ -9,4 +9,8 @@ router.get('/', async function(req, res, next) {
   res.render('index', { isLoggedIn, username, price });
 });
 
+router.get('/payment', async function(req, res, next) {
+  res.render('payment');
+});
+
 module.exports = router;
