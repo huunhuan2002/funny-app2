@@ -1,0 +1,140 @@
+/*
+    BALANCE DROPDOWN
+*/
+.arrowUpHere3 {
+  width: 0px;
+  border-style: solid;
+  border-width: 0 10px 8px 10px;
+  border-color: transparent transparent #035b21 transparent;
+  margin: 0 auto;
+}
+.balanceChild {
+  z-index: 999;
+  position: absolute;
+  left: -150px;
+  top: 25px;
+  display: none;
+  margin: 0;
+  font-family: 'Roboto',sans-serif;
+  font-size: 11px;
+}
+
+.balanceHolder {
+  background: #036526;
+  padding: 10px;
+}
+
+.balanceHolder1 {
+  background: #006f36;
+  width: 375px;
+}
+
+@media(max-width: 900px) {
+  .balanceHolder1 {
+      background: #006f36;
+      width: 240px;
+  }
+
+  .balanceChild {
+      left: -100px;
+  }
+}
+
+.balanceChild .data {
+  text-align: left;
+  padding: 10px 0;
+  width: 215px;
+}
+
+  .balanceChild .data:last-child {
+      border-top: 1px solid #1f8852;
+  }
+
+  .balanceChild .data span {
+      display: inline-block;
+      font-size: 12px;
+  }
+
+.balanceChild .balanceTxt {
+  width: 55%;
+  color: #fff;
+  text-align: right;
+}
+
+.balanceChild .balanceData {
+  color: #f9ffc3;
+  width: 40%;
+  text-align: center;
+}
+
+.balanceTbl {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+  .balanceTbl tr td {
+      padding: 6px 10px;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      border: 1px solid #035b21;
+      font-size: 11px;
+  }
+
+      .balanceTbl tr td a {
+          color: #fff;
+          cursor: pointer;
+      }
+
+          .balanceTbl tr td a:hover {
+              text-decoration: none;
+              color: #fee71b;
+          }
+
+      .balanceTbl tr td:first-child {
+          width: 70%;
+      }
+
+  .balanceTbl tr:nth-child(even) {
+      background: #007539;
+  }
+
+  .balanceTbl tr:hover {
+      background: #088545;
+  }
+
+  .balanceTbl tr td span {
+      color: #fee71b;
+      font-weight: normal;
+  }
+
+  .balanceTbl tr:first-child {
+      background: #035129;
+  }
+
+      .balanceTbl tr:first-child td {
+          font-size: 13px;
+          font-weight: 900;
+      }
+
+  .balanceTbl tr:last-child {
+      background: #035129;
+  }
+
+      .balanceTbl tr:last-child td {
+          font-size: 13px;
+          font-weight: 900;
+          padding: 10px;
+      }
+
+
+
+@media(max-width:1300px) {
+  .balanceChild.isMobile {
+      left: -150px;
+      top: 45px;
+  }
+  .isMobile .arrowUpHere3 {
+      margin-left: 80%;
+  }
+}

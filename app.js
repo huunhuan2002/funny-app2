@@ -44,13 +44,21 @@ const authMid = function (req, res, next) {
 const osDetectMid = function (req, res, next) {
   const md = new MobileDetect(req.headers['user-agent']);
   if (req.path === '/') {
-    res.redirect('/mobile');
+    const isCurrentMobilePath = req.path && req.path.includes('mobile');
+    const isMobile = (md.phone() || md.tablet() || md.phone()) && !isCurrentMobilePath && req.method === 'GET';
+    if (isMobile) {
+      res.redirect('/mobile');
+    } else {
+      next();
+    }
   } else {
     next();
   }
 }
 
-app.use('/', osDetectMid, indexRouter);
+
+
+app.use('/', indexRouter);
 app.use('/auth', authsRouter);
 app.use('/payment', authMid, paymentRouter);
 app.use('/mobile', mobileRouter)

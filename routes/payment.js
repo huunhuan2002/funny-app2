@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.send('not found');
+  const username = req.session.username;
+  res.render('payment2', { username });
 });
 
 router.get('/qrcode', function(req, res, next) {
